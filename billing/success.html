@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment complete — Warp Notes</title>
+<style>
+  body { margin:0; font-family: -apple-system, system-ui, sans-serif; background:#0A0A0C; color:#F5F6F8;
+         display:flex; align-items:center; justify-content:center; min-height:100vh; text-align:center; }
+  .card { padding: 40px 28px; max-width: 420px; }
+  h1 { font-size: 28px; margin: 0 0 10px; }
+  p { color:#A0A6B0; font-size: 16px; line-height: 1.5; margin: 0 0 28px; }
+  a.btn { display:inline-block; background:#5B7CFA; color:#fff; text-decoration:none; font-weight:700;
+          padding: 14px 28px; border-radius: 999px; font-size: 16px; }
+  .fine { color:#5F6672; font-size: 13px; margin-top: 20px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎉 You're all set</h1>
+    <p>Your Warp Notes Pro subscription is active. Head back to the app — it already knows.</p>
+    <a class="btn" href="warpnotes://billing/success">Open Warp Notes</a>
+    <p class="fine">If the button doesn't work, just switch back to the Warp Notes app.</p>
+  </div>
+  <script>setTimeout(function(){ window.location.href = 'warpnotes://billing/success'; }, 800);</script>
+</body>
+</html>

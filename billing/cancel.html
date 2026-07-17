@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout canceled — Warp Notes</title>
+<style>
+  body { margin:0; font-family: -apple-system, system-ui, sans-serif; background:#0A0A0C; color:#F5F6F8;
+         display:flex; align-items:center; justify-content:center; min-height:100vh; text-align:center; }
+  .card { padding: 40px 28px; max-width: 420px; }
+  h1 { font-size: 28px; margin: 0 0 10px; }
+  p { color:#A0A6B0; font-size: 16px; line-height: 1.5; margin: 0 0 28px; }
+  a.btn { display:inline-block; background:#1C1E25; color:#F5F6F8; text-decoration:none; font-weight:700;
+          padding: 14px 28px; border-radius: 999px; font-size: 16px; border: 1px solid #282A33; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>No worries</h1>
+    <p>Checkout was canceled — nothing was charged. You can upgrade anytime from Settings in the app.</p>
+    <a class="btn" href="warpnotes://billing/cancel">Back to Warp Notes</a>
+  </div>
+  <script>setTimeout(function(){ window.location.href = 'warpnotes://billing/cancel'; }, 800);</script>
+</body>
+</html>
