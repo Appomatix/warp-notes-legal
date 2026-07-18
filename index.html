@@ -31,7 +31,7 @@
 <body>
 <main>
   <h1>Warp Notes — Privacy Policy</h1>
-  <p class="meta">Effective July 14, 2026 · Contact: <a href="mailto:Jacob.Metcalf@appomatix.com">Jacob.Metcalf@appomatix.com</a></p>
+  <p class="meta">Effective July 18, 2026 · Contact: <a href="mailto:Jacob.Metcalf@appomatix.com">Jacob.Metcalf@appomatix.com</a></p>
 
   <p>Warp Notes ("the app") is a personal voice-note organizer made by Appomatix. This policy explains what we collect, why, and what happens to it.</p>
 
@@ -42,13 +42,15 @@
     <li><strong>Transcripts and derived data.</strong> Transcriptions of your recordings, plus AI-generated titles, summaries, action items, follow-ups/reminders, and the categories and groups your notes are filed into.</li>
     <li><strong>Search queries.</strong> Questions you type into Search are processed to retrieve and answer from your own notes. Your recent-searches list is stored <strong>only on your device</strong>.</li>
     <li><strong>Calendar linkage.</strong> If you turn on calendar sync, the app creates events in the device calendar you choose and stores only the event identifiers. Your calendar contents are never uploaded to our servers.</li>
+    <li><strong>Place lookups.</strong> When you tap a place the AI spotted in a note, we look it up with Google's Places service to find the real address. To keep results local to you, the lookup is biased using your <strong>home base</strong> (a city/state you can optionally set in Settings) — or, if you haven't set one, an <strong>approximate city-level location derived from your IP address</strong> via the ipapi.co service. We never access your device's GPS location.</li>
   </ul>
-  <p>We do <strong>not</strong> collect your location, contacts, browsing history, or advertising identifiers. There are no ads and no analytics brokers in the app.</p>
+  <p>We do <strong>not</strong> access your device's GPS location, contacts, browsing history, or advertising identifiers. There are no ads and no analytics brokers in the app.</p>
 
   <h2>How your data is processed</h2>
   <ul>
     <li><strong>Hosting &amp; storage:</strong> Your data is stored with <a href="https://supabase.com">Supabase</a> (database, file storage, authentication). Every record is protected by row-level security so it is only readable by your account.</li>
     <li><strong>AI processing:</strong> Audio is transcribed and note text is summarized, organized, and answered using <a href="https://openai.com">OpenAI</a> APIs. Per OpenAI's API policy, data sent via the API is not used to train their models.</li>
+    <li><strong>Place resolution:</strong> When you tap a detected place, its name is sent to <a href="https://developers.google.com/maps/documentation/places/web-service">Google's Places API</a> to find matching real-world locations. If you haven't set a home base, your IP address is sent to <a href="https://ipapi.co">ipapi.co</a> once per lookup to estimate your city so results are nearby. Neither request includes your notes.</li>
     <li><strong>Payments:</strong> The app is currently free. If paid plans launch, payment details will be handled by the payment provider and never stored by us.</li>
   </ul>
 
